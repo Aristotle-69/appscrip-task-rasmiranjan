@@ -12,7 +12,7 @@ export default function Header() {
         <div className={styles.leftSection}>
           <img
 
-    src="/logo.svg"
+    src="/Logo.svg"
 
     alt="metta muse logo"
 
