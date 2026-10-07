@@ -1,0 +1,98 @@
+.controls {
+  width: min(1248px, calc(100% - 32px));
+  height: 88px;
+  margin: 0 auto;
+
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 24px;
+}
+
+.leftControls {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.itemCount {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.filterButton,
+.sortButton {
+  border: none;
+  background: none;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  color: #252020;
+  font-size: 14px;
+}
+
+.filterButton {
+  gap: 12px;
+  text-decoration: underline;
+}
+
+.sortButton {
+  gap: 8px;
+  font-weight: 700;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .controls {
+    width: calc(100% - 32px);
+    height: 72px;
+    padding: 0 8px;
+  }
+
+  .leftControls {
+    gap: 20px;
+  }
+
+  .itemCount,
+  .filterButton,
+  .sortButton {
+    font-size: 12px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .controls {
+    height: 64px;
+    padding: 0;
+  }
+
+  .leftControls {
+    gap: 12px;
+  }
+
+  .itemCount {
+    display: none;
+  }
+
+  .filterButton,
+  .sortButton {
+    font-size: 11px;
+  }
+
+  .filterButton {
+    gap: 6px;
+  }
+
+  .sortButton {
+    max-width: 145px;
+  }
+}
